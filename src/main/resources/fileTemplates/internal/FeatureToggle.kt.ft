@@ -1,0 +1,19 @@
+package ${PACKAGE_NAME}
+
+import ru.tinkoff.mb.common.featuretoggle.Feature
+import ru.tinkoff.mb.common.featuretoggle.FeatureTeam
+
+/**
+ * @see [MBAND-${MBAND_TASK}](https://jira.tcsbank.ru/browse/MBAND-${MBAND_TASK})
+ * @author ${USER}
+ */
+object ${FEATURE_NAME}${MBAND_TASK}Feature : Feature {
+
+    override val id: String = "${FEATURE_ID}"
+
+    override val team: FeatureTeam = FeatureTeam.${TEAM}
+}
+
+@RequiresOptIn
+@Retention(AnnotationRetention.BINARY)
+annotation class ${FEATURE_NAME}${MBAND_TASK}OptIn
